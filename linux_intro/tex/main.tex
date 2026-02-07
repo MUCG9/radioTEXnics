@@ -3,16 +3,20 @@
 \documentclass[a4paper,12pt]{article}
 \usepackage[utf8]{inputenc}      
 \usepackage[T2A]{fontenc}
-\usepackage[english, russian]{babel}
+\usepackage[english]{babel}
 % -------------------------------------------------------------------------
 
-% Section settings0
+% Section and subsection format
 % -------------------------------------------------------------------------
 \usepackage{titlesec}
 \renewcommand{\thesection}{\Roman{section}}
 \titleformat{\section}
   {\normalfont\large\bfseries}
   {\thesection}{1em}{\MakeUppercase}
+
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries}
+  {\thesubsection}{1em}{\MakeUppercase}
 % -------------------------------------------------------------------------
 
 % Colors
@@ -57,11 +61,10 @@
 
 % Layout
 % -------------------------------------------------------------------------
-\usepackage[top=1.7cm, bottom=1cm, left=1.5cm, right=1.5cm]{geometry}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
 \usepackage{fancyhdr}
 \usepackage{multirow}
 \usepackage{lastpage}
-\usepackage{fancyhdr}
 \pagestyle{fancy}
 \rhead{\thepage/\pageref{LastPage}}
 \fancyhead[RE]{  \textit{\leftmark  }}
@@ -129,6 +132,7 @@
 % Document contents
 % ------------------------------------------------------------------------
 \include{title.tex}
+\tableofcontents
 \include{inner}
 % \include{bibliography}
 % ------------------------------------------------------------------------
