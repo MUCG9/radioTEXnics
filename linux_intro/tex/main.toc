@@ -1,3 +1,4 @@
 \babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {I}Introduction to Linux}{3}{section.1}%
 \contentsline {subsection}{\numberline {I.1}Red Hat Family Systems}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {I.2}SUSE Family Systems}{3}{subsection.1.2}%
